@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block contect %}
+
+     <h1>Edit Post</h1>
+     <from action ="" method="post">
+          {% csrf_token %}
+          {{form.as_p}}
+          <input type="submit" value="Update">
+     </from>     
+{% endblock contect %}
